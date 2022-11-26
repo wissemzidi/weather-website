@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 0.3s ease-out all;
 }
 
 html {
@@ -28,11 +27,12 @@ html {
 body {
   width: 100%;
   background-color: rgba(75, 145, 192, 0.9);
+  transition: 0.4s ease-out background-color;
 }
 
 main {
   width: 100%;
-  min-height: 80vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;

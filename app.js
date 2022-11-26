@@ -7,10 +7,13 @@ window.addEventListener("keyup", (e) => {
   }
 });
 searchBtn.addEventListener("click", () => {
-  console.log("....");
   const APIKey = "7b05c9bceece29a17e816f92cac7cda8";
   let city = document.querySelector("#city").value;
   if (city === null || city === "") {
+    searchBtn.style.backgroundColor = "red";
+    setTimeout(() => {
+      searchBtn.style.backgroundColor = "transparent";
+    }, 500);
     return;
   }
 
@@ -20,7 +23,6 @@ searchBtn.addEventListener("click", () => {
     .then((response) => response.json())
     .then((json) => {
       const container = document.querySelector(".result");
-      console.log(container);
       container.style.display = "block";
       container.style.animation = "fadeIn 1s ease-out forwards";
       const weatherInfo = document.querySelector(".weather-info");
@@ -44,8 +46,6 @@ searchBtn.addEventListener("click", () => {
       temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
       humidity.innerHTML = `${json.main.humidity}%`;
       wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
-
-      console.log("all good");
     });
 });
 

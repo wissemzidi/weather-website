@@ -40,8 +40,7 @@ searchBtn.addEventListener("click", () => {
         return;
       }
 
-      document.querySelector("main .container").style.boxShadow =
-        "0 0 1000px -2px rgba(0, 0, 0, 0.7)";
+      document.body.style.backgroundColor = "rgba(75, 145, 192, 0.75)";
       weatherInfo.style.display = "flex";
       console.log(json);
       console.log("--- getting weather ---");

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/images/logo.png">
+  <link rel="stylesheet" href="framework.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="text-c" style="color:white">Weather</h1>
+  </header>
+  <main id="main">
+    <div class="container">
+      <section id="section1">
+        <div class="s1_inputs">
+          <label for="city" class="d-flex align-c justify-c">
+            <i class="fa-solid fa-location-dot" style="scale: 1.5;"></i>
+          </label>
+          <div class="s1_inputs_right">
+            <input autofocus id="city" class="s1_input" type="text">
+            <button id="search_btn">
+              <img src="./icons/search.svg" width="25" alt="Search">
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="section2">
+        <div class="result d-grid align-c">
+          <div class="header text-c d-grid align-c justify-c">
+            <br>
+            <img src="./images/cloud.png" id="status-img" width="60%" alt="..."><br>
+            <span class="fs-20" id="temperature"></span>
+          </div>
+          <br>
+          <div class="main d-flex justify-sa p-20 pr-30 pl-30 weather-info">
+            <div class="humidity d-grid justify-c align-c">
+              <i class="fa-solid fa-water"></i>
+              <div class="text text-c">
+                <p>Humidity</p>
+                <span></span>
+              </div>
+            </div>
+            <div class="wind d-grid justify-c align-c">
+              <i class="fa-solid fa-wind"></i>
+              <div class="text text-c">
+                <p>Wind Speed</p>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <br>
+          <hr>
+          <div class="footer d-grid align-c justify-c pt-10">
+            <a target="_blank" href="https://openweathermap.org/api" class="op-min no-deco c-back">Weather Api</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <ul>
+        <li><a href="#" class="button">Contact</a></li>
+        <li><a href="#" class="button">Contact</a></li>
+        <li><a href="#" class="button">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+<script language="javascript" src="app.js"></script>
+
+</html>

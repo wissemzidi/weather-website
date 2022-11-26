@@ -27,7 +27,7 @@ html {
 
 body {
   width: 100%;
-  background-color: rgb(48, 132, 189, 0.9);
+  background-color: rgba(75, 145, 192, 0.9);
 }
 
 main {
@@ -46,6 +46,8 @@ main > .container {
   max-width: 25rem;
   padding: min(1rem, 5vw);
   border-radius: 20px;
+  box-shadow: 10px 10px 10px -2px rgba(0, 0, 0, 0.1);
+  transition: ease-out all 0.3s;
 }
 
 main #section1 {

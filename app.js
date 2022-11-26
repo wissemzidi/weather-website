@@ -40,6 +40,8 @@ searchBtn.addEventListener("click", () => {
         return;
       }
 
+      document.querySelector("main .container").style.boxShadow =
+        "0 0 1000px -2px rgba(0, 0, 0, 0.7)";
       weatherInfo.style.display = "flex";
       console.log(json);
       console.log("--- getting weather ---");
@@ -76,12 +78,5 @@ searchBtn.addEventListener("click", () => {
       temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
       humidity.innerHTML = `${json.main.humidity}%`;
       wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
-
-      // weatherBox.style.display = "";
-      // weatherDetails.style.display = "";
-      // weatherBox.classList.add("fadeIn");
-      // weatherDetails.classList.add("fadeIn");
-
-      // container.style.height = "590px";
     });
 });

@@ -36,10 +36,9 @@ This project is an input validation with a styling.
 
 #### API Reference <img src="https://github.com/Wissem-Zidi/icons/blob/main/api.svg" alt="" height="25">
 
-```html
-<p>OpenWeather</p>
-<a href="https://openweathermap.org/api">See More about openweather api</a>
-```
+- OpenWeather
+- One Call API 3.0
+- <a href="https://openweathermap.org/api">See more about the api</a>
 
 [Back To The Top](#read-me)
 

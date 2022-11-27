@@ -1,6 +1,6 @@
 # Read Me
 
-## [👀 Live-Server](https://.netlify.app)
+## [👀 Live-Server](https://weather-wissem.netlify.app)
 
 <img src="./preview.png" alt="">
 
@@ -37,7 +37,8 @@ This project is an input validation with a styling.
 #### API Reference <img src="https://github.com/Wissem-Zidi/icons/blob/main/api.svg" alt="" height="25">
 
 ```html
-<p>dummy code</p>
+<p>OpenWeather</p>
+<a href="https://openweathermap.org/api">See More about openweather api</a>
 ```
 
 [Back To The Top](#read-me)
